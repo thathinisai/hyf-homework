@@ -1,0 +1,29 @@
+.face-icon{
+    width: 200px;
+}
+header{
+    display: flex;
+    background-color: rgb(160, 174, 197);
+}
+.personal-icon, .personal-info{
+    width: 50%;
+    height: 220px;
+}
+
+h2{
+    color: blue;
+}
+body{
+    margin: 5%;
+ }
+
+.social-media{
+    width: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+header {
+    flex-direction: column;
+    align-items: center;
+}
+  }

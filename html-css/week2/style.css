@@ -1,0 +1,83 @@
+  h1, p, header, body, figure, h3{
+    margin: 0;
+  }
+  
+  header{
+    padding: 0 15%;
+    background: aliceblue;
+  }
+
+  .header-text{
+    padding: 1.5rem 0;
+  }
+
+  .banner-image{
+    width: 100%;
+  }
+
+  .menu {
+    display: flex;
+    padding: 0 15%;
+  }
+  
+  .menu a {
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    background-color: aliceblue;
+  }
+  
+  .container {
+    display: flex;
+    margin: 1rem 15%;
+  }
+
+  .left div{
+    margin-right: 2rem;
+  }
+
+  .heading{
+    margin-bottom: 1rem;
+  }
+
+  .logo{
+    width: 10%;
+  }
+
+  footer{
+    background-color: rgb(99, 98, 196);
+    display: flex;
+    padding: 0 15%;
+  }
+
+  .footer-menu {
+    display: flex;
+    padding: 0 15%;
+    flex-direction: column;
+  } 
+  
+@media only screen and (max-width: 720px) {
+  .menu {
+      flex-direction: column;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+  section{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-column{
+    flex-direction: column;
+  }
+  footer{
+    flex-direction: column;
+  }
+  .footer.menu{
+    flex-direction: column;
+  }
+}

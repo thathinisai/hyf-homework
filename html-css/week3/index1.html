@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>wireframes</title>
+</head> 
+<body>
+<header>
+  <div class="logo-nav">
+    <div class="logo"> 
+      <a href="">Logo</a>
+    </div>
+    <nav>
+      <a href="">Navigation</a>
+    </nav>
+  </div>
+  <h1>
+    Signup to yourcustomtailer.com
+  </h1>
+  <p>
+    We can't wait to help you improve your life-style and gain the attention from people around you!
+  </p>
+  <p>
+    Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy picking the best offers that match your preferences and style. Every week we will send you a hand-picked selection- we just need to know a few details about your first...
+  </p>
+</header>
+<h2>Step 1/4 - tell us who you are?
+</h2>
+<div class="progress-bar-area">
+  <h4>
+   progress
+  </h4>
+   <div class="progress-bar-container">
+    <div class="progress-status first-step"></div>
+  </div>
+</div>
+<p>
+  Nice to meet you. Let's spend a minute to get to know each other? Please enter the following:
+</p>
+<form action=  "/my-handling-form-page" method="get">
+    <div class="name-info">
+       <label for="firstname">First-Name*:</label>
+       <input type="text" id="firstname" name="first_name" required>
+       <label for="lastname">Last-Name*:</label>
+       <input type="text" id="lastname" name="last_name" required>
+    </div>
+    <div class="country-info">
+       <label for="country" class="country-bar">Country*:</label>
+       <select class="country-input" name="country" id="country" required>
+        <option value=""></option>
+         <option value="Afghanistan">Afghanistan</option>
+         <option value="India">India</option>
+         <option value="Denmark">Denmark</option>
+         <option value="Sweden">Sweden</option>
+       </select>
+      </div>
+    <div class="streetname-info">
+      <label for="streetname">Street-Name*:</label>
+       <input type="text" id="streetname" name="street-name" required>
+       <label for="postnumber">Post-Number*:</label>
+       <input type="number" id="postnumber" name="Post-Number" required>
+    </div>
+
+     <div class="description-info">
+       <label for="profiledescription">Profile-Description:</label>
+       <p>Please provide a short description of yourself to be displayed on our social community pages.</p>
+       <textarea id="ProfileDescription" name="Profile-Description"></textarea>
+     </div>
+  </form>
+  <p>Use the same address for billing and shipping? Uncheck below to fill out a separate shipping adress.
+  </p>
+  <div class="info-checkbox">
+    <label class="form-label" for="shippingaddress">shippingaddress</label>
+    <input type="checkbox" id="shippingaddress">
+    <div class="nextstep-button">
+      <a href="./index2.html">
+        <input class="next-button button" type="button" id="button" name="button" value="Nextbutton">
+      </a>  
+    </div>
+  </div>
+ </body>

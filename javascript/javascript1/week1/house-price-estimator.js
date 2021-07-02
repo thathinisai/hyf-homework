@@ -8,9 +8,9 @@ let volumeInMeters = width*depth*hieght;
 
 let housePrice = volumeInMeters * 2.5 * 1000 + gardenSizeInM2 * 300;
 
-if(housePrice > payingHousePrice){
+if(housePrice > payingHousePrice) {
     console.log("paying too much");
 }
-else if(housePrice < payingHousePrice){
+else if(housePrice < payingHousePrice) {
     console.log("paying too less");
 }

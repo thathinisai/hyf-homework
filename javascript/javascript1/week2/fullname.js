@@ -34,5 +34,5 @@ const fullname3 = getFullname();
 
 console.log(fullname1);
 console.log(fullname2);
-console.log(fullname3);
+console.log(fullname3) ;
 

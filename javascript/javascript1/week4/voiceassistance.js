@@ -25,7 +25,7 @@ function getReply(command) {
         toDoList.unshift("fishing");
         return toDoList;
     }
-    if (command == "What day is it today?") {
+    if (command === "What day is it today?") {
         const days = [
             "Monday",
             "Tuesday",
@@ -55,9 +55,7 @@ function airthOperator(command) {
         return firstNum * secondNum;
     }
 }
-function Timer() {
-    console.log("Timer is done");
-}
+
 console.log(getReply(""));
 console.log(getReply("Hello my name is Martin"));
 console.log(getReply("What is your name"));

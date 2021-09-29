@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="presscount.css">
+        <title>The fastest presser in this realm game</title>
+</head>
+    <body>
+
+        <h1 class="centeralign">Fastest Presser</h1>
+        <div class="centeralign">
+        <input type="number" id="duration" min="1">
+        
+        <p id="seconds"></p>
+        <button type="button" id="startgame" >Start Game!</button>
+        <p id="gamestatus" class="gamestatus"></p>
+        </div>
+        
+        <div class="container">
+            
+            <div class="left">
+                <div>Press S</div>
+                <p id="scount"></p>
+                <p  class="winner" id="scountWinner"></p>
+            </p>
+            </div>
+            
+            <div class="right">
+                <div>Press L</div>
+                <p id="lcount"></p>
+                <p class="winner" id="lcountWinner"></p>
+            </div>
+        </div>
+        <div class="centeralign"> 
+            <button type="button" id="resetgame"  disabled>Reset Game</button>
+        </div>
+        <script src="presscount.js">
+        </script>
+    </body>
+</html>

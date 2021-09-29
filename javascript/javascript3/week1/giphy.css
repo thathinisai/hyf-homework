@@ -1,0 +1,28 @@
+body {
+    background-color: #facb96;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 30px;
+    color: rgb(35, 13, 75);
+    font-stretch: ultra-expanded;
+    font-style: italic;
+  }
+  
+  .DispAllign {
+    justify-content: space-between;
+    text-align: center;
+  }
+  .inputclass {
+    font-size: 15px;
+    color: rgb(121, 118, 118);
+    font-style: italic;
+  }
+  button {
+    border: 2px solid rgb(26, 3, 3);
+    font-weight: bold;
+    width: 200px;
+    height: 30px;
+  }

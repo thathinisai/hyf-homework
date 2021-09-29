@@ -13,8 +13,8 @@ firstName.addEventListener("click", function getSpiritName() {
         "-Panther",
     ];
     let randomAnimal = spiritAnimals[Math.floor(Math.random() * 10)];
-    let name1 = document.getElementById("name").value;
-    if (name1 == "") {
+    let animalname = document.getElementById("name").value;
+    if (animalname == "") {
         document.getElementById("animal").innerHTML = "Please enter name";
     } else {
         let name = document.getElementById("name").value + " " + randomAnimal;

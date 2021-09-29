@@ -44627,20 +44627,17 @@ ratingMovies;
 //Count the total number of movies containing any of following keywords: Surfer, Alien or Benjamin.
 let moviesListWithString = 0;
 movies.forEach((movie) => {
-  if (movie.title.includes(`Surfer`) || movie.title.includes(`Alien`) || movie.title.includes('Benjamin')) {
+  if (movie.title.toLowercase().includes(`Surfer`) || movie.title.includes(`Alien`) || movie.title.includes('Benjamin')) {
     moviesListWithString++;
   }
 });
 console.log(moviesListWithString);
 
 //Create an array of movies where a word in the title is duplicated. Fx "Star Wars: The Clone Wars" the word Wars is duplicated.
-const duplicatedWord = movies.filter((movie)=>{
-    const movieTitle = movie.title.toLowerCase().split('');
-    const sameWords = movieTitle.filter((word,index)=>{movieTitle.indexOf(word)!== index});
-    if(sameWords.length > 0){
-        return movie;
-    } 
-});
-console.log("The total number of duplicated words are:",duplicatedWord.length);
+const duplicatedWord = [];
+ movies.map(movie =>movie.title.split('')),forEach(title=>title.filter((word,index)=>{
+   if(title.indexOf(word)!= index){duplicatedWord.push(title.join(''))} }));
+    
+console.log("The total number of duplicated words are:",duplicatedWord);
 
 //

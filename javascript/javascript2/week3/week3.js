@@ -123,41 +123,41 @@ setTimeout(() => {
   functionObject.key();
   
   //Press Game
-  let counterL = 0;
-  let counterS = 0;
-  function counter(e) {
-    if (e.key == "l") {
-      counterL++;
-    } else if (e.key == "s") {
-      counterS++;
-    }
-  }
-  function startCounting() {
-    console.log("Game Started!!!!!");
-    document.addEventListener("keypress", counter);
-  }
+  // let counterL = 0;
+  // let counterS = 0;
+  // function counter(e) {
+  //   if (e.key == "l") {
+  //     counterL++;
+  //   } else if (e.key == "s") {
+  //     counterS++;
+  //   }
+  // }
+  // function startCounting() {
+  //   console.log("Game Started!!!!!");
+  //   document.addEventListener("keypress", counter);
+  // }
   
-  function stopCountingAndShowResult() {
-    document.removeEventListener("keypress", counter);
-    console.log("counterL: ", counterL);
-    console.log("counterS: ", counterS);
-    if (counterS > counterL) {
-      console.log("The WINNER is S");
-    } else {
-      console.log("The WINNER is L");
-    }
-  }
+  // function stopCountingAndShowResult() {
+  //   document.removeEventListener("keypress", counter);
+  //   console.log("counterL: ", counterL);
+  //   console.log("counterS: ", counterS);
+  //   if (counterS > counterL) {
+  //     console.log("The WINNER is S");
+  //   } else {
+  //     console.log("The WINNER is L");
+  //   }
+  // }
   
-  let startGame = () => {
-    let gameTime = document.getElementById("gametime").value;
-    setTimeout(() => {
-      stopCountingAndShowResult();
-    }, gameTime * 1000);
-    startCounting();
-  };
+  // let startGame = () => {
+  //   let gameTime = document.getElementById("gametime").value;
+  //   setTimeout(() => {
+  //     stopCountingAndShowResult();
+  //   }, gameTime * 1000);
+  //   startCounting();
+  // };
   
-  function reset() {
-      counterL = 0;
-      counterS = 0;
-      console.log("Game is reset");
-  }
+  // function reset() {
+  //     counterL = 0;
+  //     counterS = 0;
+  //     console.log("Game is reset");
+  // }
